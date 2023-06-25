@@ -1,0 +1,62 @@
+{
+	"name":"laemmi/contao-example-bundle",
+	"description":"Contao example bundle",
+	"keywords":["contao","symfony"],
+	"type":"contao-bundle",
+	"homepage":"https://www.spacerabbit.de/",
+	"license":"LGPL-3.0-or-later",
+	"authors":[
+		{
+			"name":"Michael Lämmlein",
+			"email":"laemmi@spacerabbit.de",
+			"role":"Maintainer"
+		}
+	],
+	"support":{
+		"source":"https://github.com/laemmi/contao-example-bundle"
+	},
+	"require": {
+		"php": "^8.1",
+		"contao/core-bundle": "^4.13"
+	},
+	"require-dev": {
+		"contao/manager-plugin": "^2.11",
+		"squizlabs/php_codesniffer": "^3.7"
+	},
+	"conflict": {
+		"contao/core": "*",
+		"contao/manager-plugin": "<2.0 || >=3.0"
+	},
+	"extra": {
+		"contao-manager-plugin": "Laemmi\\ContaoExampleBundle\\ContaoManager\\Plugin"
+	},
+	"autoload": {
+		"psr-4": {
+			"Laemmi\\ContaoExampleBundle\\": "src/"
+		},
+		"classmap": [
+			"src/Resources/contao/"
+		],
+		"exclude-from-classmap": [
+			"src/Resources/contao/config/",
+			"src/Resources/contao/dca/",
+			"src/Resources/contao/languages/",
+			"src/Resources/contao/templates/"
+		]
+	},
+	"config": {
+		"sort-packages": true,
+		"allow-plugins": {
+			"contao-components/installer": true,
+			"contao-community-alliance/composer-plugin": true,
+			"contao/manager-plugin": true,
+			"php-http/discovery": true
+		}
+	},
+	"scripts": {
+		"test": [
+			"@phpcs"
+		],
+		"phpcs": "phpcs"
+	}
+}
