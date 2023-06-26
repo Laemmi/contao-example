@@ -19,7 +19,7 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  *
- * @category   contao-example-bundle
+ * @package    contao-example
  * @author     Michael Lämmlein <laemmi@spacerabbit.de>
  * @copyright  ©2023 laemmi
  * @license    http://www.opensource.org/licenses/mit-license.php MIT-License
@@ -29,22 +29,4 @@
 
 declare(strict_types=1);
 
-namespace Laemmi\ContaoExampleBundle\DependencyInjection;
-
-use Symfony\Component\Config\FileLocator;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\DependencyInjection\Extension\Extension;
-use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
-
-class ContaoExampleBundleExtension extends Extension
-{
-    public function load(array $configs, ContainerBuilder $container)
-    {
-        $loader = new YamlFileLoader(
-            $container,
-            new FileLocator(__DIR__.'/../Resources/config')
-        );
-
-        $loader->load('services.yml');
-    }
-}
+require_once dirname(__DIR__) . '/vendor/autoload.php';

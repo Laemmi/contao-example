@@ -19,7 +19,7 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  *
- * @category   contao-example-bundle
+ * @category   contao-example
  * @author     Michael Lämmlein <laemmi@spacerabbit.de>
  * @copyright  ©2023 laemmi
  * @license    http://www.opensource.org/licenses/mit-license.php MIT-License
@@ -29,7 +29,7 @@
 
 declare(strict_types=1);
 
-use Laemmi\ContaoExampleBundle\Resources\contao\modules\ExampleModule;
+use Laemmi\ContaoExample\Resources\contao\modules\ExampleModule;
 
 /**
  * Backend modules

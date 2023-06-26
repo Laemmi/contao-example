@@ -19,7 +19,7 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  *
- * @package    contao-example-bundle
+ * @package    contao-example
  * @author     Michael Lämmlein <laemmi@spacerabbit.de>
  * @copyright  ©2023 laemmi
  * @license    http://www.opensource.org/licenses/mit-license.php MIT-License
@@ -29,11 +29,10 @@
 
 declare(strict_types=1);
 
-namespace Laemmi\ContaoExampleBundle;
+namespace Laemmi\ContaoExample;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class ContaoExampleBundle extends Bundle
 {
-
 }

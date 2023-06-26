@@ -19,7 +19,7 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  *
- * @package    contao-example-bundle
+ * @package    contao-example
  * @author     Michael Lämmlein <laemmi@spacerabbit.de>
  * @copyright  ©2023 laemmi
  * @license    http://www.opensource.org/licenses/mit-license.php MIT-License
@@ -29,13 +29,13 @@
 
 declare(strict_types=1);
 
-namespace Laemmi\ContaoExampleBundle\ContaoManager;
+namespace Laemmi\ContaoExample\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use Laemmi\ContaoExampleBundle\ContaoExampleBundle;
+use Laemmi\ContaoExample\ContaoExampleBundle;
 
 class Plugin implements BundlePluginInterface
 {
